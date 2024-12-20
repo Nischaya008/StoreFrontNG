@@ -7,7 +7,7 @@ export const useProductStore = create((set)=> ({
             if(!newProduct.name || !newProduct.price || !newProduct.image){
                 throw new Error("Please fill all the required fields")
             }
-            const res = await fetch("http://localhost:5000/api/products",{
+            const res = await fetch("https://storefrontng.onrender.com/api/products",{
                 method:"POST",
                 headers:{
                     "Content-Type": "application/json"
@@ -34,7 +34,7 @@ export const useProductStore = create((set)=> ({
                 Object.entries(updateData).filter(([_, value]) => value !== '')
             );
             
-            const res = await fetch(`http://localhost:5000/api/products/${id}`, {
+            const res = await fetch(`https://storefrontng.onrender.com/api/products/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
@@ -61,7 +61,7 @@ export const useProductStore = create((set)=> ({
     },
     deleteProduct: async (id) => {
         try {
-            const res = await fetch(`http://localhost:5000/api/products/${id}`, {
+            const res = await fetch(`https://storefrontng.onrender.com/api/products/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
@@ -85,7 +85,7 @@ export const useProductStore = create((set)=> ({
     },
     fetchProducts: async () => {
         try {
-            const res = await fetch("http://localhost:5000/api/products");
+            const res = await fetch("https://storefrontng.onrender.com/api/products");
             const data = await res.json();
             
             if (!res.ok) {
