@@ -8,7 +8,7 @@ import path from "path";
 const __dirname = path.resolve();
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors({ origin: 'https://storefrontng.onrender.com/' }));
 app.use(express.json());
 app.use("/api/products", router);
 
