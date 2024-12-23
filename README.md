@@ -18,7 +18,7 @@ A full-stack e-commerce application built with the **MERN** stack (MongoDB, Expr
 - **React**: JavaScript library for building the user interface.
 - **Node.js**: JavaScript runtime for the server-side logic.
 
-- ## Conclusion
+## Conclusion
 
 Thank you for checking out **StoreFrontNG**! This project demonstrates the power and flexibility of the MERN stack for building a full-stack application. It is designed to be scalable and easy to use for managing product data. Feel free to explore, contribute, and customize the project as per your needs.
 
