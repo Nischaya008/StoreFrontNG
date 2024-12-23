@@ -17,15 +17,6 @@ A full-stack e-commerce application built with the **MERN** stack (MongoDB, Expr
 - **Express.js**: Web framework for Node.js.
 - **React**: JavaScript library for building the user interface.
 - **Node.js**: JavaScript runtime for the server-side logic.
-- **JWT**: For secure user authentication (if applicable).
-
-### Prerequisites
-
-Ensure you have the following installed:
-
-- **Node.js** (v14 or higher)
-- **MongoDB** (either locally or use MongoDB Atlas)
-- **Git** (to clone the repository)
 
 - ## Conclusion
 
